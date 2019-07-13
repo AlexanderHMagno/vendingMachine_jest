@@ -5,7 +5,7 @@ This project doesnt contain an UI part, the idea is to create all the methods an
 
 ## Technologies 
 
-# [jests] (https://jestjs.io/)
+# jests[https://jestjs.io/]
 Jest is a delightful JavaScript Testing Framework with a focus on simplicity.
 
 # In this project you will find
@@ -17,8 +17,8 @@ Jest is a delightful JavaScript Testing Framework with a focus on simplicity.
 * A class to build the vending machine
 * User Can interact with methods:
 
-...* Print vending machine inventory
-...* Refill vending machine inventory
+... Print vending machine inventory
+... Refill vending machine inventory
 ...* Re-supply vending machine change
 ...* Dispense inventory based on payment
 ...* Return change as coins (e.g. \$0.35 is 1 quarter and 1 dime)
