@@ -6,7 +6,7 @@ This project doesnt contain an UI part, the idea is to create all the methods an
 ## Technologies 
 
 # jests(https://jestjs.io/)
-[I'm an inline-style link](https://www.google.com)
+# [I'm an inline-style link](https://www.google.com)
 Jest is a delightful JavaScript Testing Framework with a focus on simplicity.
 
 # In this project you will find
