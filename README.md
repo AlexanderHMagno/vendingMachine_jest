@@ -24,4 +24,3 @@ Jest is a delightful JavaScript Testing Framework with a focus on simplicity.
 ...* Return change as coins (e.g. \$0.35 is 1 quarter and 1 dime)
 ...* Dispense the fewest number of coins possible when returning change
 ...* Allow variable products in any slot
-
