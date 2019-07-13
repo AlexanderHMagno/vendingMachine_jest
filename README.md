@@ -16,11 +16,11 @@ Jest is a delightful JavaScript Testing Framework with a focus on simplicity.
 * A class to build the vending machine
 * User Can interact with methods:
 
-⋅⋅⋅Print vending machine inventory
-⋅⋅⋅Refill vending machine inventory
-⋅⋅⋅Re-supply vending machine change
-⋅⋅⋅Dispense inventory based on payment
-⋅⋅⋅Return change as coins (e.g. \$0.35 is 1 quarter and 1 dime)
-⋅⋅⋅Dispense the fewest number of coins possible when returning change
-⋅⋅⋅Allow variable products in any slot
+⋅⋅⋅Print vending machine inventory⋅⋅
+⋅⋅⋅Refill vending machine inventory⋅⋅
+⋅⋅⋅Re-supply vending machine change⋅⋅
+⋅⋅⋅Dispense inventory based on payment⋅⋅
+⋅⋅⋅Return change as coins (e.g. \$0.35 is 1 quarter and 1 dime)⋅⋅
+⋅⋅⋅Dispense the fewest number of coins possible when returning change⋅⋅
+⋅⋅⋅Allow variable products in any slot⋅⋅
 
