@@ -23,4 +23,8 @@ Jest is a delightful JavaScript Testing Framework with a focus on simplicity.
 ...* Dispense inventory based on payment
 ...* Return change as coins (e.g. \$0.35 is 1 quarter and 1 dime)
 ...* Dispense the fewest number of coins possible when returning change
+<<<<<<< HEAD
 ...* Allow variable products in any slot
+=======
+...* Allow variable products in any slot
+>>>>>>> e2e4894096a6f952281cf1f2a64165c5fbbc39ad
