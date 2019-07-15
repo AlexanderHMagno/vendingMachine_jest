@@ -1,18 +1,25 @@
 const machine = require("../lib/creator");
 
-describe(`When set vending machine, inventory limited by 
-capacity and number of slots`, () => {
+describe(`When set vending machine, inventory limited by capacity and number of slots`, () => {
   it("should have a maximum of units depending on slot info", () => {
     expect(machine.maxInventory()).toEqual(true);
   });
 });
 
 describe(`When owner loads the inventory`, () => {
-  it(`should return true if the final charge of new items
+  it(`should return true if the final charge  of new items (after function)
    respects the max amount of slots (capacity and number) `, () => {
     expect(
       machine.maxInventory({ chocolate: { unit: 1000, value: 6 } })
     ).toEqual(true);
+  });
+  it(`should return an object with the new amount of cash Re-supply vending machine change`, () => {
+    expect(
+      machine.addMoneytoCash(
+        { 0.1: 100, 0.25: 20, 0.5: 20, 1: 20, 2: 20 },
+        { 0.1: 100, 1: 20, 2: 40 }
+      )
+    ).toEqual({ 0.1: 200, 0.25: 20, 0.5: 20, 1: 40, 2: 60 });
   });
 });
 
@@ -47,6 +54,28 @@ describe(`When user buys a product`, () => {
       expect(
         machine.fewestNumberOfCoins(machine.returnChangeToUser(2, 4, 88))
       ).toEqual({ "2": 1, "0.5": 1, "0.25": 1, "0.1": 1 });
+    });
+  });
+});
+
+describe(`When owner reorganize inventory Allow variable products in any slot`, () => {
+  it("should change the position of elements ", () => {
+    expect(
+      machine.reOrganizeSlots(
+        {
+          chocolate: { unit: 100, value: 2, position: 1 },
+          kellogs: { unit: 200, value: 1.25, position: 2 },
+          WaterBottle: { unit: 100, value: 1.75, position: 3 },
+          Zero: { unit: 0, value: 2, position: 4 }
+        },
+        2,
+        3
+      )
+    ).toEqual({
+      chocolate: { unit: 100, value: 2, position: 1 },
+      kellogs: { unit: 200, value: 1.25, position: 3 },
+      WaterBottle: { unit: 100, value: 1.75, position: 2 },
+      Zero: { unit: 0, value: 2, position: 4 }
     });
   });
 });
