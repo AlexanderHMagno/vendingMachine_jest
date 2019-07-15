@@ -1,8 +1,5 @@
 const machine = require("../lib/creator");
 
-machine.checkMoneyDepositByUser({ 0.1: 10, 0.25: 200 });
-machine.addMoneytoCash();
-
 describe(`When set vending machine, inventory limited by 
 capacity and number of slots`, () => {
   it("should have a maximum of units depending on slot info", () => {
@@ -39,5 +36,17 @@ describe(`When user buys a product`, () => {
       machine.currentCash.value = 10;
       machine.userBuyProduct("Zero");
     }).toThrowError("Sold Out");
+  });
+  it("should return the difference if the deposited value is minor than product value", () => {
+    expect(() => {
+      expect(machine.returnChangeToUser(2, 3)).toEqual(1);
+    });
+  });
+  it("should return the change in an efficient way", () => {
+    expect(() => {
+      expect(
+        machine.fewestNumberOfCoins(machine.returnChangeToUser(2, 4, 88))
+      ).toEqual({ "2": 1, "0.5": 1, "0.25": 1, "0.1": 1 });
+    });
   });
 });
