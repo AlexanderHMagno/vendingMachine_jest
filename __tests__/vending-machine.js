@@ -7,7 +7,7 @@ describe(`When set vending machine, inventory limited by capacity and number of 
 });
 
 describe(`When owner loads the inventory`, () => {
-  it(`should return true if the final charge  of new items (after function)
+  it(`should return true if the final inventory of new items (after function)
    respects the max amount of slots (capacity and number) `, () => {
     expect(
       machine.maxInventory({ chocolate: { unit: 1000, value: 6 } })
