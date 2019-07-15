@@ -7,7 +7,7 @@ This project doesnt contain an UI part, the idea is to create all the methods an
 ### [Jests](https://jestjs.io)
 Jest is a delightful JavaScript Testing Framework with a focus on simplicity.
 
-# In this project you will find
+## In this project you will find
 
 * 10 well-formed, passing tests
 * Reasonably DRY (don’t repeat yourself) implementation, though the tests can be verbose
@@ -24,3 +24,5 @@ Jest is a delightful JavaScript Testing Framework with a focus on simplicity.
   * Dispense the fewest number of coins possible when returning change
   * Allow variable products in any slot
 
+## Screenshot of the test output from the terminal
+![](images/test.png)
