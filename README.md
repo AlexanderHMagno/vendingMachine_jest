@@ -25,4 +25,4 @@ Jest is a delightful JavaScript Testing Framework with a focus on simplicity.
   * Allow variable products in any slot
 
 ## Screenshot of the test output from the terminal
-![](images/test.png)
+![](Images/test.png)
